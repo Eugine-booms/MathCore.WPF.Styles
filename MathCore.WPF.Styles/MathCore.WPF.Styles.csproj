@@ -11,9 +11,9 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <Version>0.0.1</Version>
+    <Version>0.0.2</Version>
     <PackageReleaseNotes>
-      Запуск проекта
+      анимация перемещения заголовка
     </PackageReleaseNotes>
   </PropertyGroup>
 
