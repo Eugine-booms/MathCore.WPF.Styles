@@ -15,9 +15,9 @@
                  
                  Tag="Введите имя:"  >
         </TextBox>
-        <CheckBox Content="You sure" Width="120" Padding="5 0" Height="20" Margin="20" Style="{StaticResource SwitcherCheckBoxStyle}" Checked="CheckBox_Checked" 
+        <CheckBox Content="You sure" Width="120" Padding="5 0" Height="20" Margin="20" Style="{StaticResource SwitcherCheckBoxStyle}"  
                   IsChecked="False"/>
-        <CheckBox Content="You sure" Width="120" Padding="5 0"  Height="20" Margin="20" Style="{StaticResource SwitcherCheckBoxStyle}" Checked="CheckBox_Checked" 
+        <CheckBox Content="You sure" Width="120" Padding="5 0"  Height="20" Margin="20" Style="{StaticResource SwitcherCheckBoxStyle}"
                   IsChecked="True"/>
 
     </DockPanel>
