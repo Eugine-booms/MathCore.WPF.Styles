@@ -6,9 +6,8 @@
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="pack://application:,,,/MathCore.WPF.Styles;component/Styles/TextBoxes/TaggetTextBox.xaml "/>
+                <ResourceDictionary Source="pack://application:,,,/MathCore.WPF.Styles;component/GeneralDictionary.xaml "/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
-          
     </Application.Resources>
 </Application>

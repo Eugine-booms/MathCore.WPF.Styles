@@ -43,11 +43,7 @@
                     <Condition Property="IsFocused" Value="false"/>
                     <Condition Property="IsMouseOver" Value="false"/>
                 </MultiTrigger.Conditions>
-                <!--<Setter TargetName="Title" Property="RenderTransform">
-                    <Setter.Value >
-                        <TranslateTransform Y="16"  X="5"/>
-                    </Setter.Value>
-                </Setter>-->
+                
                 <MultiTrigger.EnterActions>
                     <BeginStoryboard>
                         <Storyboard>
