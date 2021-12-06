@@ -17,9 +17,9 @@ jobs:
         dotnet-version: 3.1.x
     - name: Restore dependencies
       run: dotnet restore
-    - name: Build
-      run: 
-        dotnet build MathCore.WPF.Styles/MathCore.WPF.Styles.csproj -c Debug --no-restore
-        dotnet build Tests/MathCore.WPF.Style.Tests/MathCore.WPF.Style.Tests.csproj -c Debug --no-restore
+    - name: Build MathCore.WPF.Styles.csproj
+      run: dotnet build MathCore.WPF.Styles/MathCore.WPF.Styles.csproj -c Debug --no-restore 
+    - name: Build MathCore.WPF.Style.Tests.csproj
+      run: dotnet build Tests/MathCore.WPF.Style.Tests/MathCore.WPF.Style.Tests.csproj -c Debug --no-restore
     - name: Run Test
       run: dotnet test Tests/MathCore.WPF.Style.Tests/MathCore.WPF.Style.Tests.csproj  --no-restore --verbosity normal
