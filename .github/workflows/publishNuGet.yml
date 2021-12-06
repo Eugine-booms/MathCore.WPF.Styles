@@ -27,5 +27,5 @@ jobs:
     - name: Packing
       run: dotnet pack Tests/MathCore.WPF.Style.Tests/MathCore.WPF.Style.Tests.csproj  --no-build -c Release -v q
     - name: Publishing
-      run: dotnet nuget push MathCore.WPF.Style/bin/Release/*.nupkg -s http://api.nuget.org/v3/index.json -n --skip-duplicate -k ${{secret NUGET_APIKEY}}
+      run: dotnet nuget push MathCore.WPF.Style/bin/Release/*.nupkg -s http://api.nuget.org/v3/index.json -n --skip-duplicate -k ${{secret.NuGet_apiKey}}
       
