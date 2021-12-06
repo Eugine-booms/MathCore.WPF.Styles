@@ -1,7 +1,37 @@
-<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <LangVersion>latest</LangVersion>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    
+    
+    
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <Version>0.0.1</Version>
+    <PackageReleaseNotes>
+      Запуск проекта
+    </PackageReleaseNotes>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <Authors>Boomsa</Authors>
+    <Description>Пакет стилей и шаблонов элементов управления WPF под .NetCore3.1</Description>
+    <Copyright>e.y.nesterov@mail.ru</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/Eugine-booms/MathCore.WPF.Styles</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Eugine-booms/MathCore.WPF.Styles</RepositoryUrl>
+    <RepositoryType></RepositoryType>
+    <PackageTags>WPF, Styles, Templates</PackageTags>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>MAthCore.Wpf.Style.snk</AssemblyOriginatorKeyFile>
+    <SymbolPackegeFormat>
+      snupkg
+    </SymbolPackegeFormat>
+    <DelaySign>false</DelaySign> 
   </PropertyGroup>
 
 </Project>
