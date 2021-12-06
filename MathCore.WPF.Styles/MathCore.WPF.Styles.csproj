@@ -11,9 +11,10 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <Version>0.0.2</Version>
+    <Version>0.0.3</Version>
     <PackageReleaseNotes>
-      анимация перемещения заголовка
+      Стиль TaggetTextBoxStyle
+      Стиль CheckBoxCSwitcher
     </PackageReleaseNotes>
   </PropertyGroup>
 
