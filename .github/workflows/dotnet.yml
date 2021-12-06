@@ -23,5 +23,3 @@ jobs:
         dotnet build Tests/MathCore.WPF.Style.Tests/MathCore.WPF.Style.Tests.csproj -c Debug --no-restore
     - name: Run Test
       run: dotnet test Tests/MathCore.WPF.Style.Tests/MathCore.WPF.Style.Tests.csproj  --no-restore --verbosity normal
-   
-      run: 
