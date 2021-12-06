@@ -2,8 +2,52 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 
 
-    <Style TargetType="TextBox" x:Key="TaggetTextBoxStyle">
-        <Setter Property="BorderThickness" Value="3"/>
-        <Setter Property="BorderBrush" Value="Red"/>
+    <ControlTemplate  x:Key="TaggetTextBoxTemplate" TargetType="TextBox" >
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+
+
+            <Border Grid.Row="1" x:Name="Border" BorderBrush="{TemplateBinding Property=BorderBrush}"
+                    BorderThickness="{TemplateBinding BorderThickness}"
+                    Background="{TemplateBinding Background}"
+                    SnapsToDevicePixels="True" >
+                <ScrollViewer x:Name="PART_ContentHost" Focusable="False" HorizontalScrollBarVisibility="Hidden" 
+                              VerticalScrollBarVisibility="Hidden"/>
+
+            </Border>
+            <TextBlock Grid.Row="0" Name="Title" Text="{TemplateBinding Tag}"/>
+        </Grid>
+        <ControlTemplate.Triggers >
+            <Trigger Property="IsEnabled" Value="false">
+                <Setter Property="Opacity" Value="0.5"/>
+            </Trigger>
+            <Trigger Property="IsMouseOver" Value="true">
+                <Setter  TargetName="Border" Property="BorderBrush" Value="LightBlue"/>
+            </Trigger>
+            <Trigger Property="IsKeyboardFocused" Value="true">
+                <Setter TargetName="Border" Property="BorderBrush" Value="Blue"/>
+            </Trigger>
+            <MultiTrigger>
+                <MultiTrigger.Conditions>
+                    <Condition Property="Text" Value=""/>
+                    <Condition Property="IsFocused" Value="false"/>
+                    <Condition Property="IsMouseOver" Value="false"/>
+                </MultiTrigger.Conditions>
+                <Setter TargetName="Title" Property="RenderTransform">
+                    <Setter.Value >
+                        <TranslateTransform Y="16"  X="5"/>
+                    </Setter.Value>
+                </Setter>
+            </MultiTrigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+    <Style x:Key="TaggetTextBoxStyle" TargetType="TextBox">
+        <Setter Property="Template" Value="{StaticResource TaggetTextBoxTemplate}"/>
+        <Setter Property="BorderBrush" Value="Transparent"/>
+
     </Style>
 </ResourceDictionary>
