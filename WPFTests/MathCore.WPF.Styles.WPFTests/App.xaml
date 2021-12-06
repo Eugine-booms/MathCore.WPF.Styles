@@ -4,6 +4,6 @@
              xmlns:local="clr-namespace:MathCore.WPF.Styles.WPFTests"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+          
     </Application.Resources>
 </Application>
